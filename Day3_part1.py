@@ -1,48 +1,46 @@
 
 
 def main():
-   
+
     number = 289326
 
     # constants
-    DIR_RIGHT = 0
-    DIR_UP = 1
-    DIR_LEFT = 2
-    DIR_DOWN = 3
+    direction_right = 0
+    direction_up = 1
+    direction_left = 2
+    direction_down = 3
 
     # location of the given number
     x = 0
     y = 0
 
-    # initial direction
-    DIR = 0
+    # initial directionection
+    direction = 0
 
-    # how many steps in actual direction
-    MAX_STEPS = 1
-    STEPS = 0
-    DIR_CHANGES = 0
+    # how many steps in actual directionection
+    max_steps = 1
+    steps = 0
+    direction_changes = 0
 
-
-    for i in range(1,number):
-        if DIR==DIR_RIGHT:
+    for i in range(1, number):
+        if direction == direction_right:
             x = x+1
-        if DIR==DIR_UP:
+        if direction == direction_up:
             y = y+1
-        if DIR==DIR_LEFT:
+        if direction == direction_left:
             x = x-1
-        if DIR==DIR_DOWN:
+        if direction == direction_down:
             y = y-1
-        
-        STEPS = STEPS+1
-        if STEPS==MAX_STEPS:
-            DIR_CHANGES = DIR_CHANGES+1
-            DIR = (DIR+1)%4
-            STEPS = 0
-            if DIR_CHANGES%2==0:
-                MAX_STEPS = MAX_STEPS+1
+
+        steps = steps+1
+        if steps == max_steps:
+            direction_changes = direction_changes+1
+            direction = (direction + 1) % 4
+            steps = 0
+            if direction_changes % 2 == 0:
+                max_steps = max_steps+1
 
     print("First part: " + str(abs(x)+abs(y)))
-
 
 
 if __name__ == '__main__':
