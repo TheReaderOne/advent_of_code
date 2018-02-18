@@ -1,0 +1,267 @@
+        # for val in textfile.read().split():
+        #     list_of_numbers.append(int(val))
+
+
+
+        # list_of_numbers = [int(i) for i in str(textfile)]
+    # #     list_of_numbers = [int(i) for i in list_of_numbers]
+    # # # list_of_numbers.pop()
+    #     list_of_numbers = ','.join(list_of_numbers)
+    
+
+        # numbers = textfile.readlines()
+       
+        
+        # list_of_numbers = [number.strip() for number in textfile.readlines()]
+        # textfile = list(textfile.read())
+        # list_of_numbers = list(list_of_numbers.read())
+        # print(list_of_numbers),
+        # w = map(int, textfile.readline().split())
+       
+        # print(textfile)
+        # return textfile
+    # print(list_of_numbers)
+
+        # nums = list_of_numbers
+
+  
+    # list_of_numbers = [1
+    # # ,2,3,4,5,6,7,8,9,0,1,3,4,4]
+    #list_of_numbers = [0,1,1,1,1,0]
+    # # score 1278
+    # score #3 1269
+    ## ma byc 1251
+
+
+
+
+    # for number in range(len(list_of_numbers)-1):
+    #     if list_of_numbers[number] == list_of_numbers[number+1]:
+    #         temp = list_of_numbers[number] + list_of_numbers[number]
+
+    
+    #     sum_of_numbers += temp
+
+
+    
+    # print(len(list_of_numbers))
+
+    # for number in range(len(list_of_numbers)):
+    #     print(number)
+    #     if number < len(list_of_numbers)-2:
+    #         if list_of_numbers[number] == list_of_numbers[number+1]:
+    #             temp_add = list_of_numbers[number]
+
+    #             sum_of_numbers += temp_add
+                
+    # print(sum_of_numbers)
+
+      
+   
+    def solve(numbers, second_part=False):
+        size = len(numbers)
+        jump = 1 if not second_part else size//2
+        return sum(n for i, n in enumerate(numbers) if n == numbers[i-jump])
+
+    # nums = list(map(int, instructions))
+    print("solver")
+    print(solve(list_of_numbers))
+    # print(solve(list_of_numbers), second_part=True)
+
+
+    
+
+
+    # # # first_list = [1,2,1]
+    # # second_list = [2,2,0]
+   
+    # first_list = list_of_numbers[::2]
+    # second_list = list_of_numbers[1::2]
+    
+    # if list_of_numbers[len(list_of_numbers)-1] == list_of_numbers[0]:
+    #     sum_of_numbers += list_of_numbers[0]
+
+    # if len(list_of_numbers) % 2 == 0:
+        
+    #     first_list = list_of_numbers[::2]
+    #     second_list = list_of_numbers[1::2]
+    #     for number in range(len(first_list)):
+           
+
+    #         if number >= 1:
+
+
+                
+    #             if second_list[number - 1] == second_list[number] and first_list[number-1] == first_list[number]: 
+
+    #                 if  first_list[number] == second_list[number]:
+    #                     counter_number = second_list[number]
+    #                     counter = 2
+    #                     temp_number = counter_number * counter
+    #                     sum_of_numbers += temp_number
+        
+    #         print(first_list)
+    #         print(second_list)
+    #         print(sum_of_numbers)
+
+    
+    # if len(list_of_numbers) % 2 != 0:
+    #     first_list = list_of_numbers[::2]
+    #     second_list = list_of_numbers[1::2]
+    #     second_list.append(0)
+    #     # for number in range (len(list_of_numbers)): 
+    #     number = 0
+    #     while number < len(list_of_numbers)-1:
+    #         if list_of_numbers[number] == list_of_numbers[number+1] and number:
+    #             temp_number = list_of_numbers[number]
+    #             sum_of_numbers += temp_number
+    #         number += 1
+
+
+   
+                    
+
+
+
+
+
+# n = 0
+        # while n < len(first_list)-1:
+        #     if n < len(first_list) - 2 and n >= 1:
+        #         if first_list[n] == first_list[n+1] and second_list[n-1] == second_list[n]:
+        #             if first_list[n] == second_list[n]:
+        #                 temp_number = 2 * first_list[n]
+        #                 sum_of_numbers += temp_number
+
+
+
+
+            # if n == 3:
+                
+            #     if first_list[n] == first_list[n-1] and second_list[n-1] == second_list[n-2]:
+            # #         if first_list[n-1] == second_list[n-1]:
+                        
+
+            # n += 1
+
+
+         
+         
+    # ## adding zero value to balance eveness of comparing lists
+    #     print(first_list)
+    #     print(second_list)
+    #     print(sum_of_numbers)
+
+        
+
+
+
+
+    # print(list_of_numbers)
+    
+
+    # # # list_of_numbers = [1,2,3,4,5]
+    # # # x = 0
+    # while x < len(list_of_numbers):
+    #     print(list_of_numbers[x]+1)
+    #     x+=1
+
+    # print(len(list_of_numbers))
+    # # i = 0 
+    # k = i + 1
+    # # for number in range(len(list_of_numbers)
+    #     if list_of_numbers[number] = list_of_numbers[number+1]:
+    #         double_number = list_of_numbers[number]
+    #         n += 1
+    #         temp_sum += double_number * n
+    # # # [5,4,7,7,2,4,4,4,3,5,7,7,1,1,1,2,2,5]
+    # # # list_of_numbers = [1,1,1,2,3,4,4,5,6,7,7,7,7,8,9,1]
+    # # list_of_numbers = [5,1,1,2,2,4,7,7,2,2,4,4,4,3,5,7,7,1,1,1,1,1,1,2,2,2,2,2,5]
+    # list_of_numbers = [1,1,1,1,5]
+    # # f = open("input.txt")
+    # # data = f.readline().strip()
+    # # data = list(data)
+    # for val in data:
+    #     list_of_numbers.append(int(val))
+
+   
+
+
+    # n = 0
+    # k = -1
+    # sum_of_numbers = []
+    # temp_sum = 0
+    # final_sum = 0
+    # first_number = 0
+    # last_number = len(list_of_numbers) - 1
+
+    # if list_of_numbers[first_number] == list_of_numbers[last_number]:
+    #     final_sum += list_of_numbers[first_number]  
+
+    # while n < len(list_of_numbers)-1:
+
+    #     if list_of_numbers[n] == list_of_numbers[n+1]:
+    #         k += 1
+    #         stack_number = list_of_numbers[n]
+    #         final_sum += stack_number
+    #         if k % 2 == 0 :
+    #             stack_number += stack_number
+    #             final_sum += stack_number
+    #     n += 1
+
+            
+
+
+                  
+    #     if list_of_numbers[n] != list_of_numbers[n+1] and k>0:
+    #         sum_of_numbers.append(temp_sum)
+    #         final_sum += temp_sum
+    #         temp_sum = 0
+
+    #         k = 0
+
+    #     if k > 0 and list_of_numbers[n] == list_of_numbers[n+1]:
+    #         k += 1
+    #         stack_number = list_of_numbers[n]
+    #         print(stack_number)
+    #         temp_sum = stack_number + stack_number * k
+    #         print(temp_sum)
+
+                
+
+    #     if list_of_numbers[n] == list_of_numbers[n+1] and k == 0:
+    #         stack_number = list_of_numbers[n]
+    #         print(stack_number)
+    #         temp_sum = stack_number + stack_number * k
+    #         k += 1
+    #         print(temp_sum)
+
+    #     n += 1
+        
+
+
+    # #     # for val in textfile.read().split():
+    # #     #     list_of_numbers.append(int(val))
+
+    # # # # print(sum_of_numbers)
+    # # # print(final_sum)
+
+    # data = [1,1,1,1]
+
+
+
+    # checksum= sum([ int(a) for a,b in zip(data,data[1:]) if a==b])
+
+    # print(checksum)
+
+
+
+    # textfile = []
+    # textfile = read_puzzle_input('input.txt')
+    
+
+    
+    # # list_of_numbers = [number.split()
+
+     for number in list_of_numbers]
+    # print(list_of_numbers)
